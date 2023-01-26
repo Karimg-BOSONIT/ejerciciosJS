@@ -9,6 +9,7 @@
 // a los que se debe truncar el resultado (esto se puede hacer con Number.prototype.toPrecision()). 
 // Por defecto, este parámetro debe de tener un valor de 3.
 
+// REPASAR FUNC JS
 function format(bytes, digits = 3) {
   
     const isNegative = bytes < 0;

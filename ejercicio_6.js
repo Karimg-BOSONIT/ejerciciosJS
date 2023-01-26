@@ -9,8 +9,10 @@
 const roundedResult = roundTo(2.123, 2);
 console.log(roundedResult); // 2.12
 const roundedResult = roundTo(1.123456789, 6);
-console.log(roundedResult); // 1.123456 
+console.log(roundedResult); // 1.123457 
 */
+
+//REPASAR ROUND
 
 const roundTo = (decimal, round) => {
   

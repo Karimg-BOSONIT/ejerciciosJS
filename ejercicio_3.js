@@ -9,9 +9,7 @@ const arrCities = [
   {city: 'Jaén', country: 'Spain', capital: false}
 ]
 
-const getCities = (obj) => {
-    let result = arrCities.filter(obj => obj.capital == true)
-    console.log(result)
-    return result;
-}
-getCities(arrCities);
+const getCities2 = (obj) => obj.filter(city => !city.capital && city.country === 'Spain')
+
+getCities2(arrCities)
+

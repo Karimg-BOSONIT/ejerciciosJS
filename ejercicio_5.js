@@ -33,9 +33,6 @@ const getCities = (obj) => {
 getCities(arrCities2);
 
 //Con un map
-const spainCities = arrCities2.filter(city => city.country === 'Spain');
-const newArray = spainCities.map(elem => {
-  return {city: elem.city, isSpain: true};
-});
+const spainCities = arrCities2.filter(city => city.country === 'Spain').map(elem => ({city: elem.city, isSpain: true}));
 
-console.log(newArray)
+console.log(spainCities)
