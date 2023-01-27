@@ -9,6 +9,16 @@
 // const result = splitArrayIntoChunks([1, 2, 3, 4, 5, 6, 7], 3);
 // console.log(result); // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7 ] ]
 
+//REPASO
+function splitArrayIntoChunks(arr, chunkSize) {
+  const chunks = [];
+  for (let i = 0; i < arr.length; i += chunkSize) {
+      chunks.push(arr.slice(i, i + chunkSize));
+  }
+  return chunks;
+}
+
+//ORIGINAL
 const split = (array, y) => {
     let newArray = [];
     

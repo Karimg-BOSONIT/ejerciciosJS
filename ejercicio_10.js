@@ -7,6 +7,12 @@
 
 const ejemplo = '<div><span>lorem</span> <strong>ipsum</strong></div>';
 
+//REPASO
+function removeHTMLTags(str) {
+  return str.replace(/<[^>]*>/g, "");
+}
+
+//ORIGINAL
 const removeHtml = (string) =>{
   let array = string.split("")
   let aux = 0;

@@ -12,8 +12,15 @@ const roundedResult = roundTo(1.123456789, 6);
 console.log(roundedResult); // 1.123457 
 */
 
-//REPASAR ROUND
 
+//REPASO
+function roundTo(number, decimalPlaces) {
+    const factor = 10 ** decimalPlaces;
+    return Math.round(number * factor) / factor;
+}
+
+
+//ORIGINAL 
 const roundTo = (decimal, round) => {
   
     let array = decimal.toString().split("").join("")

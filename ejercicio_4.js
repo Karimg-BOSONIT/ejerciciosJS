@@ -5,6 +5,16 @@ const arrNumber1 = [1,2,3];
 const arrNumber2 = [1,2,3,4,5];
 const arrNumber3 = [1,4,7,2];
 
+//REPASO
+const intersection = arrNumber1.filter(element => {
+    return (
+        arrNumber2.indexOf(element) !== -1 &&
+        arrNumber3.indexOf(element) !== -1
+    );
+});
+
+//ORIGINAL
+
 const getInter = (arr1, arr2, arr3) => {
 
     let len;

@@ -12,7 +12,6 @@ const result = returnFalsyValues({ a: 1, b: '2', c: 3 }, x => typeof x === 'stri
 console.log(result); // {a: 1, c: 3} 
 */
 
-//REPASAR FUNC JS
 
 const test = { a: 1, b: '2', c: 3 }
 
